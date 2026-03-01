@@ -1,0 +1,147 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+  --padding-both: 5rem;
+}
+
+
+/* Disable Tailwind utilities and preflight inside */
+.not-tailwind, 
+.not-tailwind * {
+  all: unset;       /* removes all inherited styles */
+  display: revert;  /* restore browser default */
+  font-family: revert;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+.linkStyle {
+  color: rgb(2, 2, 255);
+  font-weight: bold;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heading-size {
+  font-size: 3rem /* 48px */;
+}
+
+.sub-heading-size {
+  font-size: 40px; /* 48px */
+}
+
+.p-size {
+  font-size: 0.975rem /* 14px */;
+}
+
+.promo-banner {
+  background-image: url("/promo-banner-img.jpg");
+  background-position: center right;
+  background-repeat: no-repeat;
+  background-size: 72% auto;
+}
+
+.promo-card-shdow {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.testimonials-shdow {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.shdow-test {
+  box-shadow: 0 0 5px rgba(160, 160, 160, 0.199);
+}
+
+@media only screen and (max-width: 639px) {
+  :root {
+    --padding-both: 1.8rem;
+  }
+
+  .heading-size {
+    font-size: 2rem;
+  }
+
+  .sub-heading-size {
+    font-size: 25px; /* 48px */
+  }
+
+  .p-size {
+    font-size: 0.9rem /* 14px */;
+  }
+}
+
+.paddingx-0 {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.navigationBtnBorder {
+  border: 2px solid #edb932;
+}
+
+.servicesListBg {
+  background-color: #f1f8fa;
+}
+
+.contact-form-shdow {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.elementor-contact-us {
+  border-bottom-left-radius: 15rem;
+  border-top-left-radius: 1rem;
+}
+
+.zRotate {
+  transform: translateZ(150px);
+}
+
+.btn1:focus {
+  color: blue;
+}
+
+.hero-animation {
+  animation: grow 0.5s ease-in-out both;
+  animation-timeline: view();
+  animation-range: contain 0% cover 20%;
+}
+
+@keyframes grow {
+  from {
+    transform: translateY(100%);
+  }
+
+  to {
+    transform: translateY(0%);
+  }
+}
+
+.button-shdow {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.blog-item-shdow {
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
+    rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
+
+.read-blog-shdow {
+  box-shadow: rgba(204, 204, 204, 0.05) 0px 0px 0px 1px, rgb(235, 234, 234) 0px 0px 0px 1px inset;
+}

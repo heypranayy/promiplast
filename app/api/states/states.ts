@@ -1,0 +1,1 @@
+export const states = new Map<any, any>();
