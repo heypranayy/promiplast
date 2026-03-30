@@ -807,5 +807,115 @@ export const blogdata: IBlogItem[] = [
     date: "Feb 25, 2026",
     url: "/blog/why-professional-installation-crucial-upvc-windows-doors",
   },
+
+  {
+    id: 78,
+    heading: "UPVC vs. Aluminium vs. Wooden Windows: Which Is Best for Kolkata Homes?",
+    description:
+      "Choosing between UPVC, aluminium, and wooden windows? This guide breaks down all three options for Kolkata's hot, humid climate to help you make a truly informed decision.",
+    thumbnail: "/blog/blog3.webp",
+    altTag: "UPVC vs aluminium vs wooden windows Kolkata",
+    date: "Mar 07, 2026",
+    url: "/blog/upvc-vs-aluminium-vs-wooden-windows-best-for-kolkata-homes",
+  },
+
+  {
+    id: 79,
+    heading: "How UPVC Windows Help You Beat Kolkata's Heat and Humidity",
+    description:
+      "Kolkata's climate is brutal — scorching summers, heavy monsoons, and year-round humidity. Discover how UPVC windows provide superior thermal performance and weatherproofing to keep your home comfortable.",
+    thumbnail: "/blog/blog41.webp",
+    altTag: "UPVC windows Kolkata heat humidity",
+    date: "Mar 09, 2026",
+    url: "/blog/how-upvc-windows-help-beat-kolkata-heat-humidity",
+  },
+
+  {
+    id: 80,
+    heading: "Sliding vs. Casement vs. Tilt & Turn: Which Window Style Suits Your Home?",
+    description:
+      "Not sure which window style to choose? Compare sliding, casement, and tilt & turn UPVC windows to find the perfect fit for every room in your home.",
+    thumbnail: "/blog/blog66.jpg",
+    altTag: "sliding casement tilt turn UPVC windows comparison",
+    date: "Mar 11, 2026",
+    url: "/blog/sliding-vs-casement-vs-tilt-turn-window-style-for-home",
+  },
+
+  {
+    id: 81,
+    heading: "5 Signs It's Time to Replace Your Old Windows and Doors",
+    description:
+      "Old or deteriorating windows can quietly cost you money, comfort, and security. Here are five clear signs that it is time to upgrade to modern UPVC windows and doors.",
+    thumbnail: "/blog/blog34.webp",
+    altTag: "signs to replace old windows and doors",
+    date: "Mar 13, 2026",
+    url: "/blog/5-signs-time-to-replace-old-windows-and-doors",
+  },
+
+  {
+    id: 82,
+    heading: "How UPVC Windows Reduce Noise Pollution in Your Kolkata Apartment",
+    description:
+      "Constant traffic, construction, and urban noise affecting your home? Learn how UPVC double-glazed windows can reduce noise by up to 45 decibels for a quieter Kolkata apartment.",
+    thumbnail: "/blog/blog27.webp",
+    altTag: "UPVC windows noise reduction Kolkata apartment",
+    date: "Mar 15, 2026",
+    url: "/blog/how-upvc-windows-reduce-noise-pollution-kolkata-apartment",
+  },
+
+  {
+    id: 83,
+    heading: "The Complete Guide to UPVC Door Types for Indian Homes",
+    description:
+      "From casement and sliding to folding and tilt & turn — explore the full range of UPVC door types available for Indian homes and find the right one for every application.",
+    thumbnail: "/blog/blog29.webp",
+    altTag: "UPVC door types Indian homes guide",
+    date: "Mar 17, 2026",
+    url: "/blog/complete-guide-upvc-door-types-indian-homes",
+  },
+
+  {
+    id: 84,
+    heading: "Are UPVC Windows Worth the Investment? A Cost vs. Benefit Analysis",
+    description:
+      "UPVC windows cost more upfront — but are they worth it? A detailed cost-benefit analysis covering energy savings, maintenance costs, durability, and property value enhancement.",
+    thumbnail: "/blog/blog39.webp",
+    altTag: "UPVC windows cost benefit analysis investment",
+    date: "Mar 19, 2026",
+    url: "/blog/are-upvc-windows-worth-the-investment-cost-benefit-analysis",
+  },
+
+  {
+    id: 85,
+    heading: "How to Maintain Your UPVC Windows and Doors: A Simple Seasonal Guide",
+    description:
+      "UPVC windows need very little care — but a little seasonal attention goes a long way. This practical guide walks you through pre-monsoon, monsoon, post-monsoon and summer maintenance.",
+    thumbnail: "/blog/blog51.png",
+    altTag: "UPVC windows doors seasonal maintenance guide",
+    date: "Mar 21, 2026",
+    url: "/blog/how-to-maintain-upvc-windows-doors-seasonal-guide",
+  },
+
+  {
+    id: 86,
+    heading: "Top 7 Reasons Kolkata Builders and Architects Are Choosing UPVC Windows",
+    description:
+      "Leading builders and architects in Kolkata are switching to UPVC windows fast. Discover the top seven reasons why UPVC is now the professional specification of choice for residential and commercial projects.",
+    thumbnail: "/blog/blog62.jpg",
+    altTag: "builders architects UPVC windows Kolkata",
+    date: "Mar 23, 2026",
+    url: "/blog/top-7-reasons-kolkata-builders-architects-choose-upvc-windows",
+  },
+
+  {
+    id: 87,
+    heading: "UPVC Windows and Vastu Compliance: What Homeowners Should Know",
+    description:
+      "Want UPVC windows that also align with Vastu Shastra? Learn how to combine modern UPVC technology with traditional Vastu principles for directional placement, colours, and proportions.",
+    thumbnail: "/blog/blog44.jpg",
+    altTag: "UPVC windows Vastu compliance homeowners",
+    date: "Mar 25, 2026",
+    url: "/blog/upvc-windows-vastu-compliance-homeowners-guide",
+  },
 ];
 
