@@ -9,6 +9,7 @@ import SpinnerSvg from "../componnets/SpinnerSvg";
 import { ContactFormType } from "../redux/slice/contactUsDialogSlice";
 import { IApiResponse } from "@/types";
 import { FormEvent } from "react";
+import { useRouter } from "next/navigation";
 
 interface IProps {
   className?: string;
@@ -19,6 +20,7 @@ interface IProps {
 export default function ContactUsForm({ children, className, type }: IProps) {
   const [isPending, startTransition] = useTransition();
   const [response, setResponse] = useState<string | null>(null);
+  const router = useRouter();
 
   const handleSubmitForm = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -33,11 +35,11 @@ export default function ContactUsForm({ children, className, type }: IProps) {
           Number: data.get("number"),
           Message: data.get("message"),
         });
-        setResponse(
-          res === "Successfully Submitted"
-            ? "Thank you! Your form has been submitted successfully."
-            : res
-        );
+        if (res === "Successfully Submitted") {
+          router.push("/thank-you");
+          return;
+        }
+        setResponse(res);
       } else {
         try {
           const response = await fetch("/api/get-brochure", {
@@ -54,7 +56,9 @@ export default function ContactUsForm({ children, className, type }: IProps) {
           atag.href = `/api/download-brochure/${result.data}`;
           atag.download = "Promiplast-Products.pdf";
           atag.click();
-          setResponse("Thank you! Your form has been submitted successfully.");
+          setTimeout(() => {
+            router.push("/thank-you");
+          }, 150);
         } catch (error) {
           const err = error as Error;
           setResponse(err.message);

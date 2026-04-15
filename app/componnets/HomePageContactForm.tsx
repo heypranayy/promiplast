@@ -7,10 +7,12 @@ import Button from "./Button";
 import { sendMail } from "@/utils/sendMail";
 import SpinnerSvg from "./SpinnerSvg";
 import { FormEvent } from "react";
+import { useRouter } from "next/navigation";
 
 export default function HomePageContactForm() {
   const [isPending, startTransition] = useTransition();
   const [response, setResponse] = useState<string | null>(null);
+  const router = useRouter();
 
   const handleSubmitForm = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -24,11 +26,11 @@ export default function HomePageContactForm() {
         Number: data.get("number"),
         Message: data.get("message"),
       });
-      setResponse(
-        res === "Successfully Submitted"
-          ? "Thank you! Your form has been submitted successfully."
-          : res
-      );
+      if (res === "Successfully Submitted") {
+        router.push("/thank-you");
+        return;
+      }
+      setResponse(res);
     });
   };
   return (
