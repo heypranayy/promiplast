@@ -33,7 +33,11 @@ export default function ContactUsForm({ children, className, type }: IProps) {
           Number: data.get("number"),
           Message: data.get("message"),
         });
-        setResponse(res);
+        setResponse(
+          res === "Successfully Submitted"
+            ? "Thank you! Your form has been submitted successfully."
+            : res
+        );
       } else {
         try {
           const response = await fetch("/api/get-brochure", {
@@ -50,7 +54,7 @@ export default function ContactUsForm({ children, className, type }: IProps) {
           atag.href = `/api/download-brochure/${result.data}`;
           atag.download = "Promiplast-Products.pdf";
           atag.click();
-          setResponse("");
+          setResponse("Thank you! Your form has been submitted successfully.");
         } catch (error) {
           const err = error as Error;
           setResponse(err.message);
@@ -136,7 +140,7 @@ export default function ContactUsForm({ children, className, type }: IProps) {
           } transition-all duration-500
           `}
         >
-          {response || "Successfully Submitted"}
+          {response || "Thank you! Your form has been submitted successfully."}
         </p>
       </div>
       {children}

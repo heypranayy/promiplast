@@ -24,7 +24,11 @@ export default function HomePageContactForm() {
         Number: data.get("number"),
         Message: data.get("message"),
       });
-      setResponse(res);
+      setResponse(
+        res === "Successfully Submitted"
+          ? "Thank you! Your form has been submitted successfully."
+          : res
+      );
     });
   };
   return (
@@ -49,7 +53,7 @@ export default function HomePageContactForm() {
           response ? "opacity-100 text-green-700" : "opacity-0 text-red-700"
         } text-center text-sm text-gray-800 transition-all duration-500`}
       >
-        {response || "Successfully Submitted"}
+        {response || "Thank you! Your form has been submitted successfully."}
       </p>
     </form>
   );
