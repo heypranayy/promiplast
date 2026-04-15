@@ -6,12 +6,16 @@ import Textarea from "./Textarea";
 import Button from "./Button";
 import { sendMail } from "@/utils/sendMail";
 import SpinnerSvg from "./SpinnerSvg";
+import { FormEvent } from "react";
 
 export default function HomePageContactForm() {
   const [isPending, startTransition] = useTransition();
   const [response, setResponse] = useState<string | null>(null);
 
-  const handleSubmitForm = async (data: FormData) => {
+  const handleSubmitForm = async (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const data = new FormData(e.currentTarget);
+
     startTransition(async () => {
       setResponse(null);
       const { response: res } = await sendMail<string, Error>({
@@ -24,7 +28,7 @@ export default function HomePageContactForm() {
     });
   };
   return (
-    <form action={handleSubmitForm} className="w-[80%] space-y-3 sm:w-full">
+    <form onSubmit={handleSubmitForm} className="w-[80%] space-y-3 sm:w-full">
       <Input required name="name" placeholder="Full Name" />
       <Input required name="email" type="email" placeholder="Email" />
       <Input

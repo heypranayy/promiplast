@@ -153,6 +153,40 @@ export default function Navbar({ pReferral }: IProps) {
             >
               {item.text}
             </OpenDownloadBrochureForm>
+          ) : item.link === "#" ? (
+            <div
+              className="font-poppins sm:block sm:w-full relative border-b border-t border-transparent hover:border-yellow-400 transition-all duration-500 group/products cursor-default"
+              key={item.id}
+            >
+              {item.text.toUpperCase()}
+              <div
+                className={`absolute -right-44 invisible group-hover/products:visible sm:w-full sm:right-0 sm:left-0`}
+              >
+                <div
+                  className={`py-6 w-[32rem] sm:rounded-sm sm:w-full shadow-2xl gap-y-5 mt-[1.9rem] opacity-0 translate-y-5 group-hover/products:translate-y-0 group-hover/products:opacity-100 text-gray-800 bg-white rounded-br-[5rem] grid grid-cols-2 transition-all duration-1000`}
+                >
+                  {productsSubItems.map((item, index) =>
+                    index === 0 || index === 1 ? (
+                      <span
+                        key={item.name}
+                        className="pl-[83px] font-semibold text-[18px] text-yellow-500"
+                      >
+                        {item.name}
+                      </span>
+                    ) : (
+                      <Link
+                        key={item.name}
+                        className={`flex items-center hover:opacity-60 transition-all duration-300 text-[12.5px] font-semibold gap-2 text-gray-500 pl-10`}
+                        href={`/products/${item.link}`}
+                      >
+                        {item.icon}
+                        {item.name}
+                      </Link>
+                    )
+                  )}
+                </div>
+              </div>
+            </div>
           ) : (
             <Link
               className={`font-poppins sm:block sm:w-full relative border-b border-t border-transparent hover:border-yellow-400 transition-all duration-500 ${
@@ -162,35 +196,6 @@ export default function Navbar({ pReferral }: IProps) {
               href={item.link}
             >
               {item.text.toUpperCase()}
-              {item.link === `#` ? (
-                <div
-                  className={`absolute -right-44 invisible group-hover/products:visible sm:w-full sm:right-0 sm:left-0`}
-                >
-                  <div
-                    className={`py-6 w-[32rem] sm:rounded-sm sm:w-full shadow-2xl gap-y-5 mt-[1.9rem] opacity-0 translate-y-5 group-hover/products:translate-y-0 group-hover/products:opacity-100 text-gray-800 bg-white rounded-br-[5rem] grid grid-cols-2 transition-all duration-1000`}
-                  >
-                    {productsSubItems.map((item, index) =>
-                      index === 0 || index === 1 ? (
-                        <span
-                          key={item.name}
-                          className="pl-[83px] font-semibold text-[18px] text-yellow-500"
-                        >
-                          {item.name}
-                        </span>
-                      ) : (
-                        <Link
-                          key={item.name}
-                          className={`flex items-center hover:opacity-60 transition-all duration-300 text-[12.5px] font-semibold gap-2 text-gray-500 pl-10`}
-                          href={`/products/${item.link}`}
-                        >
-                          {item.icon}
-                          {item.name}
-                        </Link>
-                      )
-                    )}
-                  </div>
-                </div>
-              ) : null}
             </Link>
           )
         )}

@@ -8,6 +8,7 @@ import { sendMail } from "@/utils/sendMail";
 import SpinnerSvg from "../componnets/SpinnerSvg";
 import { ContactFormType } from "../redux/slice/contactUsDialogSlice";
 import { IApiResponse } from "@/types";
+import { FormEvent } from "react";
 
 interface IProps {
   className?: string;
@@ -19,7 +20,10 @@ export default function ContactUsForm({ children, className, type }: IProps) {
   const [isPending, startTransition] = useTransition();
   const [response, setResponse] = useState<string | null>(null);
 
-  const handleSubmitForm = async (data: FormData) => {
+  const handleSubmitForm = async (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const data = new FormData(e.currentTarget);
+
     startTransition(async () => {
       setResponse(null);
       if (type === "contact-form") {
@@ -58,7 +62,7 @@ export default function ContactUsForm({ children, className, type }: IProps) {
   return (
     <form
       onClick={(e) => e.stopPropagation()}
-      action={handleSubmitForm}
+      onSubmit={handleSubmitForm}
       className={`bg-white w-96 contact-form-shdow relative rounded-2xl font-poppins p-10 ${className}`}
     >
       <h2 className="text-2xl font-semibold">Get in Touch</h2>

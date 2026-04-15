@@ -13,20 +13,22 @@ interface IProps extends ButtonTypes {
 }
 
 export default function Button(props: IProps) {
+  const { children, animation, icon, className, ...buttonProps } = props;
+
   return (
     <button
-      {...props}
-      className={`bg-[#edb932] text-xs py-[12px] relative flex-center gap-3 overflow-hidden px-[45px] group/readmore tracking-wider font-light ${props.className}`}
+      {...buttonProps}
+      className={`bg-[#edb932] text-xs py-[12px] relative flex-center gap-3 overflow-hidden px-[45px] group/readmore tracking-wider font-light ${className}`}
     >
 
-      {props.animation ? (
+      {animation ? (
         <>
           <div className="z-0 size-full bg-[#7c007c8a] absolute right-0 -left-full group-hover/readmore:left-0 transition-all duration-500"></div>
           <span className="z-10 group-hover/readmore:text-white transition-all duration-300">
-            {props.children}
+            {children}
           </span>
-          {props.icon ? (
-            props.icon
+          {icon ? (
+            icon
           ) : (
             <GoArrowUpRight
               className="z-10 group-hover/readmore:rotate-45 group-hover/readmore:text-white transition-all duration-500"
@@ -35,7 +37,7 @@ export default function Button(props: IProps) {
           )}
         </>
       ) : (
-        <span>{props.children}</span>
+        <span>{children}</span>
       )}
 
       {/* </Button> */}

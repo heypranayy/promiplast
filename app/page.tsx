@@ -180,14 +180,14 @@ export default function Home() {
       <SectionLayout className="w-full paddingx-0 sm:h-full sm:max-h-full sm:px-0">
         <div className="grid grid-cols-4 sm:grid-cols-1">
           {categorys_list.map((item, index) => (
-            <Link key={item.image} href={item.link} className="block">
-              <IntersectionObserverComponent
-                style={{ transitionDelay: `${index * 100}ms` }}
-                beforeAnimation="translate-x-full opacity-0 blur-2xl"
-                afterAnimation="translate-x-0 opacity-100 blur-none"
-                key={item.image}
-                className="w-full relative h-[28rem] overflow-hidden group/cat"
-              >
+            <IntersectionObserverComponent
+              style={{ transitionDelay: `${index * 100}ms` }}
+              beforeAnimation="translate-x-full opacity-0 blur-2xl"
+              afterAnimation="translate-x-0 opacity-100 blur-none"
+              key={item.image}
+              className="w-full relative h-[28rem] overflow-hidden group/cat"
+            >
+              <Link href={item.link} className="block size-full">
                 <Image
                   className="object-cover size-full"
                   src={item.image}
@@ -196,16 +196,13 @@ export default function Home() {
                   height={1200}
                 />
                 <div className="bg-[#07070798] group-hover/cat:bg-transparent absolute top-0 bottom-0 size-full flex items-end py-5 px-5 transition-all duration-500">
-                  <Link
-                    href={item.link}
-                    className="flex items-center transition-all duration-300 gap-2 uppercase font-poppins text-white hover:text-[#edb932]"
-                  >
+                  <span className="flex items-center transition-all duration-300 gap-2 uppercase font-poppins text-white hover:text-[#edb932]">
                     <span>{item.catname}</span>
                     <FaArrowDownLong className="-rotate-90" />
-                  </Link>
+                  </span>
                 </div>
-              </IntersectionObserverComponent>
-            </Link>
+              </Link>
+            </IntersectionObserverComponent>
           ))}
         </div>
       </SectionLayout>
