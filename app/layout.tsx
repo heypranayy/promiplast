@@ -1,6 +1,5 @@
 import { Poppins } from "next/font/google";
 import { Roboto } from "next/font/google";
-import Script from "next/script";
 import "./globals.css";
 import MyProvider from "./redux/MyProvider";
 
@@ -26,13 +25,11 @@ export default function RootLayout({
     <html lang="en">
       <head>
         {/* Google tag (single global install for all pages) */}
-        <Script
+        <script
+          async
           src="https://www.googletagmanager.com/gtag/js?id=G-Z2F00SKKJP"
-          strategy="afterInteractive"
         />
-        <Script
-          id="google-tag-config"
-          strategy="afterInteractive"
+        <script
           dangerouslySetInnerHTML={{
             __html: `
               window.dataLayer = window.dataLayer || [];
