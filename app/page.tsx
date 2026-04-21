@@ -239,9 +239,9 @@ export default function Home() {
                 width={1200}
               />
               <OpenContactUsDialogBtn className="absolute bottom-5 right-5">
-                <button className="bg-[#EDB932] px-5 py-[0.7rem] button-shdow  tracking-wider hover:bg-[#e4c576] transition-all duration-300 rounded-md text-gray-800 text-xs font-semibold font-poppins">
+                <span className="bg-[#EDB932] px-5 py-[0.7rem] button-shdow tracking-wider hover:bg-[#e4c576] transition-all duration-300 rounded-md text-gray-800 text-xs font-semibold font-poppins inline-block">
                   Get Quote
-                </button>
+                </span>
               </OpenContactUsDialogBtn>
             </div>
           ))}

@@ -25,6 +25,25 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        {/* Google tag (single global install for all pages) */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-Z2F00SKKJP"
+          strategy="afterInteractive"
+        />
+        <Script
+          id="google-tag-config"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-Z2F00SKKJP');
+              gtag('config', 'AW-18080754106');
+            `,
+          }}
+        />
+
         {/* Google Site Verification */}
         <meta
           name="google-site-verification"
@@ -55,25 +74,6 @@ export default function RootLayout({
       <body
         className={`${roboto.className} ${poppins.variable} bg-[#FAFAFA] overflow-hidden w-full`}
       >
-        {/* Google Analytics GA4 */}
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-Z2F00SKKJP"
-          strategy="afterInteractive"
-        />
-
-        <Script
-          id="ga4-config"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-Z2F00SKKJP');
-            `,
-          }}
-        />
-
         <MyProvider>{children}</MyProvider>
       </body>
     </html>
