@@ -917,5 +917,225 @@ export const blogdata: IBlogItem[] = [
     date: "Mar 25, 2026",
     url: "/blog/upvc-windows-vastu-compliance-homeowners-guide",
   },
+
+  {
+    id: 88,
+    heading: "Surviving the Monsoons: Why UPVC Windows are the Ultimate Waterproof Solution",
+    description:
+      "Anyone who has lived through a true Kolkata monsoon knows the weather is relentlessly unforgiving. Discover how fusion-welded UPVC frames and EPDM gaskets create an impenetrable watertight seal that keeps your premium interiors dry.",
+    thumbnail: "/blog/blog45.jpg",
+    altTag: "UPVC waterproof windows Kolkata monsoon",
+    date: "Apr 01, 2026",
+    url: "/blog/surviving-kolkata-monsoons-upvc-waterproof-windows",
+  },
+
+  {
+    id: 89,
+    heading: "Beating the Humid Heat: How UPVC Sliding Doors Lower Your AC Bills",
+    description:
+      "From April through September, Kolkata's heat and humidity push AC units to their limits. Learn how multi-chambered UPVC profiles and double glazing break the thermal bridge and slash your electricity bills.",
+    thumbnail: "/blog/blog41.webp",
+    altTag: "UPVC sliding doors thermal insulation lower AC bills",
+    date: "Apr 03, 2026",
+    url: "/blog/beating-humid-heat-upvc-sliding-doors-lower-ac-bills",
+  },
+
+  {
+    id: 90,
+    heading: "Soundproofing Your Apartment: The Acoustic Benefits of UPVC Tilt & Turn Windows",
+    description:
+      "Relentless urban noise from traffic and construction is a silent health hazard. Discover how UPVC Tilt & Turn windows with airtight EPDM compression seals and asymmetric double glazing turn your home into a peaceful sanctuary.",
+    thumbnail: "/blog/blog7.webp",
+    altTag: "UPVC tilt and turn windows soundproofing acoustic",
+    date: "Apr 05, 2026",
+    url: "/blog/soundproofing-apartment-acoustic-upvc-tilt-turn-windows",
+  },
+
+  {
+    id: 91,
+    heading: "Keeping the City Dust Out: The Science Behind UPVC Weather Seals",
+    description:
+      "Wondering how dust accumulates even with windows shut? Traditional frames are fundamentally leaky. Learn how Promi Plast's EPDM compression seals create a vacuum-tight barrier against PM2.5, soot, and urban smog.",
+    thumbnail: "/blog/blog40.webp",
+    altTag: "UPVC weather seals dust pollution urban air quality",
+    date: "Apr 07, 2026",
+    url: "/blog/keeping-city-dust-out-upvc-weather-seals",
+  },
+
+  {
+    id: 92,
+    heading: "UPVC vs. Traditional Wooden Windows: A Cost and Durability Comparison for Humid Climates",
+    description:
+      "Wood swells, warps, rots, and invites termites. Compare the real long-term costs of timber maintenance against the zero-maintenance durability of Promi Plast UPVC, including the stunning wood-grain lamination option.",
+    thumbnail: "/blog/blog10.webp",
+    altTag: "UPVC vs wooden windows cost durability humid climate",
+    date: "Apr 09, 2026",
+    url: "/blog/upvc-vs-wooden-windows-cost-durability-humid-climates",
+  },
+
+  {
+    id: 93,
+    heading: "UPVC Sliding vs. Casement Windows: Which is Right for Your Living Room?",
+    description:
+      "Sliding windows offer panoramic views and space efficiency; casement windows deliver maximum ventilation and the tightest compression seal. A complete guide to choosing the right UPVC window style for your specific needs.",
+    thumbnail: "/blog/blog66.jpg",
+    altTag: "UPVC sliding vs casement windows comparison guide",
+    date: "Apr 11, 2026",
+    url: "/blog/upvc-sliding-vs-casement-windows-which-is-right",
+  },
+
+  {
+    id: 94,
+    heading: "What Are Tilt and Turn Windows? The European Trend Taking Over Modern Indian Homes",
+    description:
+      "A single handle, two revolutionary opening modes. Discover how Promi Plast's UPVC Tilt & Turn windows offer weather-proof ventilation, uncompromised security, child safety, and effortless cleaning — all in one mechanism.",
+    thumbnail: "/blog/blog43.jpg",
+    altTag: "UPVC tilt and turn windows European design India",
+    date: "Apr 13, 2026",
+    url: "/blog/what-are-tilt-and-turn-windows-european-trend",
+  },
+
+  {
+    id: 95,
+    heading: "Kitchen and Bathroom Ventilation: The Practical Magic of UPVC Top Hung Windows",
+    description:
+      "Top hung (awning) windows are the unsung heroes of home design. Learn how their unique outward-opening mechanism harnesses the stack effect, preserves privacy, shields against monsoon rain, and keeps high-moisture spaces hygienic.",
+    thumbnail: "/blog/blog6.webp",
+    altTag: "UPVC top hung awning windows kitchen bathroom ventilation",
+    date: "Apr 15, 2026",
+    url: "/blog/kitchen-bathroom-ventilation-upvc-top-hung-windows",
+  },
+
+  {
+    id: 96,
+    heading: "The Great Debate: UPVC vs. Aluminum Window Frames for Coastal and Humid City Climates",
+    description:
+      "Aluminum conducts heat and corrodes in salty humid air. UPVC insulates, never corrodes, and outperforms on acoustics. A definitive scientific breakdown of why Promi Plast UPVC is replacing aluminum in premium residential projects.",
+    thumbnail: "/blog/blog3.webp",
+    altTag: "UPVC vs aluminum windows humid coastal climate comparison",
+    date: "Apr 17, 2026",
+    url: "/blog/upvc-vs-aluminum-windows-great-debate-humid-climates",
+  },
+
+  {
+    id: 97,
+    heading: "Customizing Your Home: Exploring Colored and Wood-Grain UPVC Profiles",
+    description:
+      "UPVC no longer means basic white plastic. Explore Promi Plast's advanced UV-resistant foil lamination technology — from stately Dark Walnut to bold Anthracite Grey — and discover the dual-color profile option for ultimate design freedom.",
+    thumbnail: "/blog/blog65.avif",
+    altTag: "colored wood grain UPVC profiles luxury window customization",
+    date: "Apr 19, 2026",
+    url: "/blog/customizing-home-wood-grain-colored-upvc-profiles",
+  },
+
+  {
+    id: 98,
+    heading: "Elevating High-Rise Balconies: Why Luxury Developments Prefer UPVC Sliding Doors",
+    description:
+      "At 20 floors up, fenestration must withstand extreme wind loads, horizontal rain, and intense glare while operating effortlessly. Discover why steel-reinforced, frictionless UPVC sliding doors are the gold standard for luxury high-rise balconies.",
+    thumbnail: "/blog/blog48.webp",
+    altTag: "UPVC sliding doors luxury high-rise balcony Kolkata",
+    date: "May 01, 2026",
+    url: "/blog/high-rise-balconies-luxury-upvc-sliding-doors",
+  },
+
+  {
+    id: 99,
+    heading: "Blurring Indoor and Outdoor Spaces with UPVC Folding Doors",
+    description:
+      "The ultimate luxury is erasing the boundary between your living room and outdoor patio entirely. Learn how Promi Plast UPVC bifold doors fold an entire wall away, transforming your home into a seamless, open-air entertainment zone.",
+    thumbnail: "/blog/blog29.webp",
+    altTag: "UPVC folding bifold doors indoor outdoor living",
+    date: "May 03, 2026",
+    url: "/blog/blurring-indoor-outdoor-spaces-upvc-folding-doors",
+  },
+
+  {
+    id: 100,
+    heading: "Upgrading Your Foyer: The Elegance and Security of UPVC Casement Doors",
+    description:
+      "Your main entrance sets the tone for your entire home. Discover how Promi Plast UPVC casement doors combine multi-point locking security, galvanized steel cores, and stunning wood-grain lamination for a foyer that is both regal and impenetrable.",
+    thumbnail: "/blog/blog38.webp",
+    altTag: "UPVC casement door foyer elegance security",
+    date: "May 05, 2026",
+    url: "/blog/upgrading-foyer-elegance-security-upvc-casement-doors",
+  },
+
+  {
+    id: 101,
+    heading: "Transforming Open Balconies into Sunrooms with UPVC Folding Windows",
+    description:
+      "Stop losing valuable square footage to dust, noise, and monsoon rains. Learn how Promi Plast UPVC bifold windows let you enclose your balcony into a climate-controlled sunroom — and open it back up completely whenever you choose.",
+    thumbnail: "/blog/blog60.avif",
+    altTag: "UPVC folding windows balcony sunroom conversion",
+    date: "May 07, 2026",
+    url: "/blog/transforming-balconies-sunrooms-upvc-folding-windows",
+  },
+
+  {
+    id: 102,
+    heading: "Matching Window Styles with Modern Architectural Trends",
+    description:
+      "From anthracite grey minimalism to Dark Walnut heritage elegance, UPVC profiles now match every design language. An expert guide to pairing the right Promi Plast UPVC window style and finish with minimalist, heritage, coastal, and industrial aesthetics.",
+    thumbnail: "/blog/blog36.jpg",
+    altTag: "UPVC window styles matching architectural trends",
+    date: "May 09, 2026",
+    url: "/blog/matching-window-styles-modern-architectural-trends",
+  },
+
+  {
+    id: 103,
+    heading: "Securing Ground-Floor Flats: The Multi-Point Locking Systems of UPVC Casement Doors",
+    description:
+      "Ground-floor security doesn't have to mean ugly iron bars. Discover how Promi Plast UPVC casement doors use multi-point steel locking cams, galvanized reinforcement, and laminated safety glass to provide bank-vault protection with elegant aesthetics.",
+    thumbnail: "/blog/blog46.webp",
+    altTag: "UPVC casement door ground floor security multi-point locking",
+    date: "May 11, 2026",
+    url: "/blog/securing-ground-floor-flats-upvc-casement-doors",
+  },
+
+  {
+    id: 104,
+    heading: "The Zero-Maintenance Guide: How to Clean and Care for Your UPVC Windows",
+    description:
+      "Throw away the sandpaper and varnish for good. UPVC is the 'fit and forget' solution. This simple, practical guide covers everything from soapy-water cleaning and hardware lubrication to gasket care and weep-hole clearing.",
+    thumbnail: "/blog/blog34.webp",
+    altTag: "UPVC window cleaning maintenance zero effort guide",
+    date: "May 13, 2026",
+    url: "/blog/zero-maintenance-guide-care-upvc-windows",
+  },
+
+  {
+    id: 105,
+    heading: "Does Upgrading to UPVC Windows Increase Your Property Value?",
+    description:
+      "UPVC windows deliver one of the highest ROIs in home renovation. Learn how energy efficiency, pristine curb appeal, 40dB noise reduction, and advanced security features directly translate into a higher property valuation and faster sales.",
+    thumbnail: "/blog/blog47.avif",
+    altTag: "UPVC windows increase property value ROI",
+    date: "May 15, 2026",
+    url: "/blog/upgrading-upvc-windows-increase-property-value",
+  },
+
+  {
+    id: 106,
+    heading: "What to Expect During a Professional UPVC Window Replacement",
+    description:
+      "Worried about dust, mess, and weeks of disruption? Modern UPVC installation is closer to precision cabinetry than heavy construction. A transparent, step-by-step guide from survey and measurement to dry installation, silicone sealing, and final adjustment.",
+    thumbnail: "/blog/blog62.jpg",
+    altTag: "UPVC window replacement installation process guide",
+    date: "May 17, 2026",
+    url: "/blog/what-to-expect-professional-upvc-window-replacement",
+  },
+
+  {
+    id: 107,
+    heading: "Eco-Friendly Living: Why UPVC Windows are the Sustainable Choice",
+    description:
+      "Is UPVC really eco-friendly? Yes — and the science proves it. Discover how UPVC windows combat deforestation, slash household carbon emissions, last 40-50 years without replacement, and are 100% recyclable at the end of their long life.",
+    thumbnail: "/blog/blog31.webp",
+    altTag: "UPVC windows eco-friendly sustainable green building",
+    date: "May 19, 2026",
+    url: "/blog/eco-friendly-living-upvc-windows-sustainable-choice",
+  },
 ];
 
